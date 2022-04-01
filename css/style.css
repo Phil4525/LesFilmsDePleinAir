@@ -1,15 +1,16 @@
-   
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
-
-/* header {
-    background-color: lightgray;
-} */
 
 .logo {
     width: 80px;
@@ -19,4 +20,24 @@ h1, h2, h3, h4, h5, h6 {
 .sponsor {
     width: 150px;
     height: 150px;
+}
+
+.btn {
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+#hero {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.imageTop {
+    height: 498px;
 }
