@@ -25,7 +25,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand ms-lg-5" href="index.html">
                     <img class="logo" src="img/Logo.svg" alt="logo">
                 </a>
@@ -37,18 +37,18 @@
                 </button>
 
                 <div id="navbarNavAltMarkup" class="collapse navbar-collapse justify-content-end me-5">
-                    <ul class="navbar-nav text-uppercase">
+                    <ul class="navbar-nav text-uppercase fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html#actus">Actualités</a>
+                            <a class="nav-link" href="index.html">Actualités</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="programme.html#programme">Programme</a>
+                            <a class="nav-link active" aria-current="page" href="programme.html#programme">Programme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Réservations</a>
+                            <a class="nav-link" href="reservations.html">Réservations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -58,229 +58,230 @@
 
     <main>
         <section>
-            <div class="row p-5 mb-5 bg-dark imageTop">image</div>
+            <div class="row p-5 mb-5 bg-dark imageTop">carousel</div>
         </section>
 
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <h2 id="programme" class="col-10 p-0 text-uppercase mb-3">Programmation 2022</h2>
+                    <h2 id="programme" class="col-sm-12 col-md-10 col-lg-8 p-0 text-uppercase mb-3">Programmation 2022
+                    </h2>
                 </div>
                 <!-- JOUR 01 -->
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-10 bg-secondary text-white pt-2">
-                        <h3>Vendredi 05 août</h3>
+                    <div class="col-md-10 col-lg-8 bg-secondary text-white pt-2">
+                        <h3>vendredi 05 août</h3>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="18:00">18:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="18:00">18:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="20:00">20:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="20:00">20:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="22:00">22:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="22:00">22:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <!-- JOUR 02 -->
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-10 bg-secondary text-white pt-2">
-                        <h3>Samedi 06 août</h3>
+                    <div class="col-md-10 col-lg-8 bg-secondary text-white pt-2">
+                        <h3>samedi 06 août</h3>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="18:00">18:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="18:00">18:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="20:00">20:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="20:00">20:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="22:00">22:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="22:00">22:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
                 <!-- JOUR 03 -->
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-10 bg-secondary text-white pt-2">
-                        <h3>Dimanche 07 août</h3>
+                    <div class="col-md-10 col-lg-8 bg-secondary text-white pt-2">
+                        <h3>dimanche 07 août</h3>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="18:00">18:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="18:00">18:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="20:00">20:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="20:00">20:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="22:00">22:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="22:00">22:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <!-- JOUR 04 -->
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-10 bg-secondary text-white pt-2">
+                    <div class="col-md-10 col-lg-8 bg-secondary text-white pt-2">
                         <h3>Lundi 08 août</h3>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="18:00">18:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="18:00">18:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-dark">
+                    <div class="col-md-5 col-lg-4 bg-dark">
                         <p>Image</p>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-light p-4">
-                        <time class="fs-1 fw-bolder date" datetime="20:00">20:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4">
+                        <time class="fs-1 heureSeance" datetime="20:00">20:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-5 bg-light p-4 text-end order-2 order-md-1">
-                        <time class="fs-1 fw-bolder date" datetime="22:00">22:00</time>
+                    <div class="col-md-5 col-lg-4 bg-light p-4 text-end order-2 order-md-1">
+                        <time class="fs-1 heureSeance" datetime="22:00">22:00</time>
                         <h4 class="text-uppercase fst-italic fs-3">Titre du film</h4>
                         <p class="fw-bolder fs-5">Nom du Réalisateur</p>
                         <p>Genre - Nationalité - Année - Durée</p>
                         <p>Acteurs principaux</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#film">
                             Voir plus
                         </button>
                     </div>
-                    <div class="col-md-6 col-lg-5 bg-dark order-1 order-md-2">
+                    <div class="col-md-5 col-lg-4 bg-dark order-1 order-md-2">
                         <p>Image</p>
                     </div>
                 </div>
@@ -301,7 +302,7 @@
                         <h4 class="text-uppercase">Abonnez vous à la newsletter pour suivre l'actualité du festival.
                         </h4>
 
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="Email" aria-label="email"
                                     aria-describedby="button-addon2">
@@ -361,11 +362,11 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="film" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content rounded-0">
-                <div class="modal-header bg-secondary rounded-0">
-                    <h5 class="modal-title text-uppercase text-white" id="exampleModalLabel">Date - Heure</h5>
+                <div class="modal-header rounded-0 border-0">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLabel">Date - Heure</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -402,13 +403,19 @@
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
+                                    <div class="text-center">
+                                        <a class="fs-5 fw-bolde text-decoration-none" href="reservations.html">
+                                            Réservez vos places !
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand ms-lg-5" href="index.html">
                     <img class="logo" src="img/Logo.svg" alt="logo">
                 </a>
@@ -37,18 +37,19 @@
                 </button>
 
                 <div id="navbarNavAltMarkup" class="collapse navbar-collapse justify-content-end me-5">
-                    <ul class="navbar-nav text-uppercase">
+                    <ul class="navbar-nav text-uppercase fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html#actus">Actualités</a>
+                            <a class="nav-link" href="index.html">Actualités</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="programme.html#programme">Programme</a>
+                            <a class="nav-link" href="programme.html">Programme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Réservations</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="reservations.html#reservations">Réservations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -66,8 +67,8 @@
 
                 <div class="row justify-content-center mb-5">
                     <div class="col-10  bg-light">
-                        <form action="" method="get">
-                            <div class="input-group row justify-content-center py-5">
+                        <form action="" method="post">
+                            <div class="row justify-content-center py-5">
                                 <div class="col-6">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control rounded-0 mb-3" id="email"
@@ -107,8 +108,13 @@
                                             J'accepte la politique de confidentialité.
                                         </label>
                                     </div>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#confirmation">
+                                        <button class="btn btn-primary" type="submit">
+                                            Réserver
+                                        </button>
+                                    </a>
 
-                                    <button class="btn btn-secondary" type="submit">Réserver</button>
+
                                 </div>
                             </div>
 
@@ -185,7 +191,7 @@
                         <h4 class="text-uppercase">Abonnez vous à la newsletter pour suivre l'actualité du festival.
                         </h4>
 
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="Email" aria-label="email"
                                     aria-describedby="button-addon2">
@@ -243,6 +249,27 @@
             </section>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-5 pb-5">
+                    <h5 class="modal-title mb-4" id="exampleModalLabel">Merci !</h5>
+                    <p>Votre réservation à bien été prise en compte. Un email de confirmation vous a été envoyé.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
