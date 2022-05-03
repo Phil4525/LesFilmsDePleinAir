@@ -1,3 +1,10 @@
+@media screen {
+    .sponsor {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .nav-link {
         font-size: 0.9rem;
@@ -13,6 +20,18 @@
     .logo {
         width: 60px;
         height: 60px;
+    }
+
+    .sponsor {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sponsor {
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -45,14 +64,13 @@ h6 {
     background-color: black;
 }
 
-.sponsor {
+/* .sponsor {
     width: 150px;
     height: 150px;
-}
+} */
 
 .btn {
     border-radius: 0;
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -71,6 +89,10 @@ h6 {
         url('../img/4846309.svg');
 background-image: url('../img/4846309.svg');
 } */
+
+.imgMinHeight {
+    min-height: 250px;
+}
 
 .heureSeance,
 .date {
@@ -99,7 +121,6 @@ background-image: url('../img/4846309.svg');
 
 label {
     font-weight: 700;
-    /* text-transform: uppercase; */
 }
 
 .form-check-label {
