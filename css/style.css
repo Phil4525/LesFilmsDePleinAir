@@ -54,9 +54,9 @@ h6 {
     height: 80px;
 } */
 
-/* .bgNavbar {
+.bgYello {
     background-color: #ffd100;
-} */
+}
 
 .puce {
     width: 22px;
@@ -129,6 +129,11 @@ label {
 }
 
 .rappel {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.carouselText {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
